@@ -19,6 +19,15 @@ public class Sortowanie {
         }
     }
 
+    /**********
+     nazwa funkcji: szukajMaksymalnej
+    parametry wejściowe: k - indeks początku przeszukiwanej tablicy
+    funkcja zwraca szukanyIndeks - czyli maksymalna wartość
+     0000000000000
+
+     * @param k
+     * @return
+     */
     private int szukajMaksymalnej(int k) {
         int szukanyIndeks = k;
         int maksymalnaWartosc = tablica[k];
@@ -33,6 +42,13 @@ public class Sortowanie {
         return szukanyIndeks;
     }
 
+    /****
+    nazwa funkcji: szukaj
+     parametry wejściowe: brak
+     funkcja nic nie zwraca
+
+     *
+     */
     public void sortuj(){
         for(int i = 0;i< tablica.length -1;i++){
             int indeks = szukajMaksymalnej(i);
@@ -42,4 +58,6 @@ public class Sortowanie {
             tablica[indeks] = pomoc;
         }
     }
+
+
 }
